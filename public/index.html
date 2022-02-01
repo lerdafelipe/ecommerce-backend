@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega 26</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container" style="margin-bottom: 80px;">
+        <h1 style="text-align: center;">Entrega 26</h1>
+
+        <div id="links">
+            <button><a href="./pages/login.html">Login</a></button>
+        </div>
+
+        <div class="Logout-div hide-div" id="Logout-div">
+            <img src="" alt="user-photo" id="user-photo">
+            <p id="user-email"></p>
+            <h2 id="welcome-user"></h2>
+            <button type="button" id="Logout"><a href="./pages/logout.html">Logout</a></button>
+        </div>
+
+        <hr />
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="dropCart">
+              
+            </ul>
+
+            <button type="button" onclick="sendCart()">Finalizar compra</button>
+          </div>
+
+        <h2>Producto a agregar</h2>
+
+        <form>
+            <input type="text" id="title" placeholder="Producto">
+            <input type="number" id="price" placeholder="Precio">
+            <input type="number" id="stock" placeholder="Stock">
+            <input type="text" id="description" placeholder="Descripcion">
+            <button type="button" id="add">Enviar Producto</button>
+        </form>
+
+        <hr />
+
+
+        <h2>Productos</h2>
+
+        <div class="row" id="innerProducts">
+
+        </div>
+        <hr />
+
+        <h2>Producto a modificar</h2>
+        <form>
+            <input type="text" id="idChange" placeholder="Id">
+            <input type="text" id="titleNew" placeholder="Producto">
+            <input type="text" id="priceNew" placeholder="Precio">
+            <input type="number" id="stockNew" placeholder="Stock">
+            <input type="text" id="descriptionNew" placeholder="Categoria">
+            <button type="button" id="change">Modificar Producto</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
